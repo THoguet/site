@@ -1,7 +1,7 @@
 <?php
 try
 {
-$db = new PDO('mysql:host=localhost;dbname=forum', '***REMOVED***', '***REMOVED***');
+$db = new PDO('mysql:host=localhost;dbname=forum', '**REMOVED**', '**REMOVED**');
 }
 catch (Exception $e)
 {

@@ -6,9 +6,9 @@ include("includes/debut.php");
 // Numéro du port d'écoute de l'ordinateur cible. Habituellement tout port compris entre 1 et 50000 fonctionnera mais les ports 7 ou 9 sont à privilégier.
 $socket_number = "9";
 // Adresse MAC du périphérique réseau de l'ordinateur cible
-$mac_addy = "***REMOVED***";
+$mac_addy = "**REMOVED**";
 // Adresse IP de l'ordinateur cible (ip publique de votre routeur/modem). Entrez le nom de domaine si vous en utilisez-un (tel que Dynamic DNS/IP).
-$ip_addy = "***REMOVED***";
+$ip_addy = "**REMOVED**";
 
 ## fonction ##
 function WakeOnLan($addr, $mac,$socket_number) {
@@ -45,7 +45,7 @@ function WakeOnLan($addr, $mac,$socket_number) {
   }
 
 if (isset($_GET['mdp'])) {
-	if ($_GET['mdp'] == '***REMOVED***') {
+	if ($_GET['mdp'] == '**REMOVED**') {
 		flush();
 		# envoi du paquet magique
 		WakeOnLan($ip_addy, $mac_addy,$socket_number);
